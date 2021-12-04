@@ -1,0 +1,334 @@
+/*common to all section*/
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    color: grey;
+    text-align: justify;
+}
+
+.flex{
+    display: flex;
+}
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+/* Body Header */
+
+#body-header {
+    height: 75vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.social-icons li a i {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px rgba(189, 195, 199, .5);
+
+}
+
+
+/*about section*/
+
+
+#about p{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+
+p{
+    margin: 0;
+    line-height: 1.5;
+    padding-bottom: 60px;
+}
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
+
+section:nth-child(2n){
+    background-color: #efefef;
+}
+
+/*skill section*/
+section h1{
+    font-weight: 100;
+    font-size: 40px;
+}
+.techskills{
+    color: white;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 900px;
+    margin: auto;
+}
+#skills{
+    padding: 75px 0 60px;
+}
+.teacherboard{
+    text-align: center;
+    color: #2d3fa7;
+    margin-bottom: 100px;
+}
+.tech-outer{
+    width: 200px;
+    background-color: #d3d3d3;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.tech-inner{
+    padding: 7px 0 7px 8px;
+    border-radius: 15px 0 0 15px;
+}
+.bluebg{
+    background-color: #2d3fa7;
+}
+.orangbg{
+    background-color: #ff2b00;
+}
+.majentabg{
+    background-color: #9b6a8b;
+}
+.greenbg{
+    background-color: #00887a;
+}
+.skill50perc{
+    width: 50%;
+}
+.skill90perc{
+    width: 90%;
+
+}
+.skill80perc{
+    width: 80%;
+}
+
+
+/*portfolio section*/
+
+#portfolio{
+    padding: 70px 0;
+}
+.list{
+    color: #2d3fa7;
+}
+#portfolio ul{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+#portfolio ul li{
+    width: 350px;
+    margin-bottom: 30px;
+}
+#portfolio ul li:last-child{
+    background-color: #c3c3c3;
+    position: relative;
+}
+#portfolio ul li h1{
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/*experience section*/
+
+#experience{
+    padding: 60px 0;
+}
+.briefcase{
+    color: #2d3fa7;
+    margin-bottom: 50px;
+}
+
+.timeline ul{
+    border: 2px solid black;
+    width: 85%;
+    margin: 0 auto;
+    padding: 5px 50px;
+    position: relative;
+}
+.timeline ul .timeline-box{
+    width: 47%;
+    min-height: 200px;
+    border: 2px solid black;
+}
+.timeline ul .timeline-box:nth-child(2n){
+    margin-left: auto;
+}
+
+.timeline-driver{
+    width: 0;
+    height: 75%;
+    border: 2px dotted #87ceff;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+.timeline-traveler{
+    transform: rotate(90deg);
+    position: sticky;
+    top: 25%;
+    color: #2d3fa7;
+}
+
+.timeline-box{
+    position: relative;
+}
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    position: absolute;
+    left: 105.5%;
+    top: 30%;
+}
+
+.timeline-box:nth-child(2n)::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    position: absolute;
+    right: 105%;
+    top: 30%;
+}
+
+
+
+
+
+/*media query*/
+@media only screen and (max-width: 991px){
+    .timeline ul .timeline-box{
+        width: 100%;
+        margin-bottom: 20px;
+-40px
+    }
+    .timeline ul li:first-child{
+        margin-top: 20px;
+    }
+    .timeline-driver{
+        left: 17px;
+        height: 90%;
+        top: 4%;
+    }
+    .timeline-box:nth-child(2n+1)::after,.timeline-box:nth-child(2n)::before{
+        left: -40px;
+    }
+}
+@media only screen and (max-width: 768px){
+    #portfolio ul{
+        justify-content: center;
+    }
+
+
+}
+
